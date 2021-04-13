@@ -34,40 +34,48 @@ p {
 
 /* -------------------------------------------------- */
 /* ---------------- navigation ---------------------- */
+.index_header {
+    background-color: $dark_green;
+}
+
 .logo_nav_img {
     position: absolute;
     right: 5px;
     width: 170px;
 }
 a {
-    color: #29375a;
+    color: $text_dark;
     display: block;
     font-weight: lighter;
-
+    font-family: Abel;
     letter-spacing: 2px;
-    text-transform: uppercase;
 }
 header {
-    background-color: #ededed;
-    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+    background-color: $text_light;
     position: absolute;
     width: 100%;
+    height: 90px;
     z-index: 3;
 }
 header ul {
-    background-color: #f5f5f5;
+    background-color: $text_light;
     list-style: none;
     margin: 0;
     overflow: hidden;
     padding: 0;
+    position: absolute;
+    top: 90px;
+    width: 100%;
 }
 header li a {
     padding: 20px 20px;
     text-decoration: none;
+    font-size: 20px;
 }
+
 header li a:hover,
 header .menu-btn:hover {
-    background-color: #f4f4f4;
+    color: $dark_green;
 }
 header .logo {
     display: block;
@@ -79,26 +87,28 @@ header .menu {
     clear: both;
     max-height: 0;
     transition: max-height 0.2s ease-out;
+    background-color: $text_light;
 }
 header .menu-icon {
     cursor: pointer;
     display: inline-block;
-    margin-top: 28px;
     padding: 28px 20px;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     user-select: none;
 }
 header .menu-icon .navicon {
-    background: #29375a;
+    background: $dark_green;
     display: block;
-    height: 2px;
+    height: 3px;
     position: relative;
     transition: background 0.2s ease-out;
-    width: 18px;
+    width: 28px;
 }
 header .menu-icon .navicon:before,
 header .menu-icon .navicon:after {
-    background: #29375a;
+    background: $dark_green;
     content: "";
     display: block;
     height: 100%;
@@ -107,10 +117,10 @@ header .menu-icon .navicon:after {
     width: 100%;
 }
 header .menu-icon .navicon:before {
-    top: 5px;
+    top: 10px;
 }
 header .menu-icon .navicon:after {
-    top: -5px;
+    top: -10px;
 }
 header .menu-btn {
     display: none;
@@ -184,14 +194,16 @@ footer {
     margin-top: -1px;
 }------------------- */
 
-/* ------ tlf.  ------ */
-
 /* ------ ipad og tablets ------ */
 @media screen and (min-width: 672px) and (max-width: 950px) {
     /* --------------------Main - forside---------------- */
 
-    .logo_nav {
+    .logo_nav_img {
         left: 5px;
+    }
+
+    .logo_nav_img {
+        position: relative;
     }
 
     main {
@@ -222,6 +234,38 @@ footer {
         margin-bottom: 0;
     }
     /* -------------------------------------------------- */
+    header li {
+        float: left;
+    }
+    header li a {
+        padding-left: 10px;
+        font-size: 18px;
+    }
+
+    header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-36%);
+        background-color: transparent;
+    }
+    header .menu-icon {
+        display: none;
+    }
+
+    header ul {
+        width: auto;
+    }
+    .logo_nav {
+        float: left;
+    }
+
+    .last_child {
+        padding-right: 5px;
+    }
 }
 
 /* ------- desktop -------- */
@@ -269,5 +313,37 @@ footer {
         transform: scale(1.1);
         margin: 0;
     }
+
+    header li {
+        float: left;
+    }
+    header li a {
+        padding-left: 30px;
+    }
+
+    header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-36%);
+    }
+    header .menu-icon {
+        display: none;
+    }
+
+    header ul {
+        width: auto;
+    }
+    .logo_nav {
+        float: left;
+    }
+
+    .last_child {
+        padding-right: 5px;
+    }
+
     /* -------------------------------------------------- */
 }
