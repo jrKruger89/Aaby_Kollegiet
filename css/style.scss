@@ -1,43 +1,39 @@
-/*---------- Sass Variabler ----------*/
+/*---------- Sass Variabler --------- */
 $dark_green: #8db596;
 $light_green: #bedbbb;
 $light_brown: #92807a;
 $dark_brown: #707070;
-
 $text_dark: #1e1e1e;
 $text_light: #ededed;
-
+/*----------------------------------- */
+/*------------ general -------------- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-.index_background {
-    background-color: $dark_green;
-}
-
 body {
     font-size: 100%;
-    height: 100%;
 }
-
-html {
-    height: 100%;
-}
-
 p {
     font-family: calibri;
     font-size: 12px;
     color: #1e1e1e;
 }
-
-/* -------------------------------------------------- */
-/* ---------------- navigation ---------------------- */
-.index_header {
-    background-color: $dark_green;
+.layer {
+    height: 90px;
+    width: 100%;
 }
-
+h1 {
+    font-size: 2.5em;
+    font-weight: 100;
+    font-family: abel;
+    color: $text_light;
+    padding-top: 100px;
+    text-align: center;
+}
+/* ------------------------------------ */
+/* ---------------- navigation -------- */
 .logo_nav_img {
     position: absolute;
     right: 5px;
@@ -72,7 +68,6 @@ header li a {
     text-decoration: none;
     font-size: 20px;
 }
-
 header li a:hover,
 header .menu-btn:hover {
     color: $dark_green;
@@ -141,31 +136,27 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
 }
-/* -------------------------------------------------- */
-/* --------------------Main - forside---------------- */
-main {
+/* ------------------------------------ */
+/* ------------- main index ----------- */
+.index_header {
+    background-color: $dark_green;
+}
+.index_background {
+    background-color: $dark_green;
+}
+.index_main {
     background-color: $dark_green;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
 }
-
-h1 {
-    font-size: 2.5em;
-    font-weight: 100;
-    font-family: abel;
-    color: $text_light;
-    padding-top: 100px;
-    text-align: center;
-}
-
 .flexbox_profile {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
-
 .new_resident_h2,
 .current_resident_h2 {
     font-size: 20px;
@@ -175,65 +166,65 @@ h1 {
     color: $text_light;
     padding: 20px 0 10px 0;
 }
-
 .new_resident_img,
 .current_resident_img {
     width: 200px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
-
 .current_resident_img {
     margin-bottom: 50px;
 }
+/* ------------------------------------ */
+/* ------------- main ..... ----------- */
 
-/* ------------------------------------------------- */
-/* ---------------- Footer -------
+/* ------------------------------------ */
+/* ---------------- footer ------------ */
 footer {
     background: #8db596;
-    height: 92px;
+    height: 100px;
+    width: 100%;
     margin-top: -1px;
-}------------------- */
-
-/* ------ ipad og tablets ------ */
+    padding: 30px 20px 0 20px;
+}
+.footer_text {
+    font-family: abel;
+    color: $text_light;
+    text-align: center;
+    font-size: 15px;
+}
+/* ------------------------------------ */
+/* --- mediaquery ipad og tablets ----- */
 @media screen and (min-width: 672px) and (max-width: 950px) {
-    /* --------------------Main - forside---------------- */
-
+    /* --- main index (ipad og tablets) --- */
     .logo_nav_img {
         left: 5px;
     }
-
     .logo_nav_img {
         position: relative;
     }
-
-    main {
-        height: 100%;
+    .index_main {
         justify-content: center;
     }
-
     .flexbox_profile {
         flex-direction: row;
         justify-content: space-evenly;
     }
-
     h1 {
         padding-top: 0;
     }
-
     .new_resident_h2,
     .current_resident_h2 {
         font-size: 25px;
     }
-
     .new_resident_img,
     .current_resident_img {
         width: 300px;
     }
-
     .current_resident_img {
         margin-bottom: 0;
     }
-    /* -------------------------------------------------- */
+    /* ------------------------------------ */
+    /* --- navigation (ipad og tablets) --- */
     header li {
         float: left;
     }
@@ -241,7 +232,6 @@ footer {
         padding-left: 10px;
         font-size: 18px;
     }
-
     header .menu {
         clear: none;
         float: right;
@@ -255,72 +245,66 @@ footer {
     header .menu-icon {
         display: none;
     }
-
     header ul {
         width: auto;
     }
     .logo_nav {
         float: left;
     }
-
     .last_child {
         padding-right: 5px;
     }
+    /* ------------------------------------ */
+    /* --- footer (ipad og tablets) ------- */
+    footer {
+        padding: 40px 20px 0 20px;
+    }
 }
-
-/* ------- desktop -------- */
+/* ------------------------------------ */
+/* ------ mediaquery desktop ---------- */
 @media screen and(min-width: 951px) {
-    /* --------------------Main - forside---------------- */
-
+    /* ------- main index (desktop)-------- */
     .logo_nav_img {
         left: 5px;
     }
-
-    main {
-        height: 100%;
+    .index_main {
         justify-content: center;
     }
-
     .flexbox_profile {
         flex-direction: row;
         justify-content: space-evenly;
     }
-
     h1 {
         padding-top: 0;
         font-size: 3.5em;
     }
-
     .new_resident_h2,
     .current_resident_h2 {
         font-size: 35px;
         margin-bottom: 10px;
     }
-
     .new_resident_img,
     .current_resident_img {
         width: 400px;
         transition: transform 0.2s;
         margin: 0;
     }
-
     .current_resident_img:hover {
         transform: scale(1.1);
         margin: 0;
     }
-
     .new_resident_img:hover {
         transform: scale(1.1);
         margin: 0;
     }
-
+    /* ------------------------------------ */
+    /* ------- navigation (desktop) ------- */
     header li {
         float: left;
     }
     header li a {
         padding-left: 30px;
     }
-
     header .menu {
         clear: none;
         float: right;
@@ -333,17 +317,19 @@ footer {
     header .menu-icon {
         display: none;
     }
-
     header ul {
         width: auto;
     }
     .logo_nav {
         float: left;
     }
-
     .last_child {
         padding-right: 5px;
     }
-
-    /* -------------------------------------------------- */
+    /* ------------------------------------ */
+    /* ---------- footer (desktop) -------- */
+    footer {
+        padding: 40px 20px 0 20px;
+    }
 }
+/* ------------------------------------ */
