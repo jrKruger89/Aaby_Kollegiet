@@ -225,7 +225,16 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 }
 
 /* ------------------------------------ */
-/* ------------- main ..... ----------- */
+/* ---- main beboer opslagstavle ------ */
+.vaerelsestyper_background {
+  background-color: #92807a;
+}
+
+.logout-icon {
+  width: 20px;
+  height: 20px;
+}
+
 /* ------------------------------------ */
 /* ---------------- footer ------------ */
 footer {

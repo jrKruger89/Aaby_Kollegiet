@@ -55,6 +55,7 @@ header {
 }
 header ul {
     background-color: $text_light;
+
     list-style: none;
     margin: 0;
     overflow: hidden;
@@ -175,7 +176,19 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     margin-bottom: 50px;
 }
 /* ------------------------------------ */
-/* ------------- main ..... ----------- */
+/* ---- main beboer opslagstavle ------ */
+.vaerelsestyper_background {
+    background-color: $light_brown;
+}
+
+.heading-box h3 {
+    background-color: $dark_green;
+}
+
+.logout_img {
+    width: 20px;
+    height: 20px;
+}
 
 /* ------------------------------------ */
 /* ---------------- footer ------------ */
