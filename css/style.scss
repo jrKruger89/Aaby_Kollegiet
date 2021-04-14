@@ -191,6 +191,189 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 }
 
 /* ------------------------------------ */
+/* ---- Main kommende beboer  ------ */
+.headerimg_dorm {
+    height: 390px;
+    background-image: url("../img/headerimg-kollegie.jpg");
+    background-position: center;
+    background-size: 160%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.underlay_filter {
+    background-color: $dark_brown;
+    height: 250px;
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 160px;
+    opacity: 0.5;
+}
+
+.header_dorm_h1 {
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 3.9em;
+    z-index: 1;
+    padding: 10px 0 25px 0;
+}
+
+.header_dorm_h2 {
+    color: $text_light;
+    font-family: Abel;
+    font-weight: 100;
+    font-size: 1.1em;
+    text-align: center;
+    z-index: 1;
+}
+
+.apply_btn {
+    z-index: 1;
+    background-color: $dark_green;
+    color: $text_light;
+    font-family: Abel;
+    padding: 5px 32px;
+    cursor: pointer;
+    border: none;
+    border-radius: 18px;
+}
+
+.info_dorm {
+    background-color: $dark_green;
+    padding: 20px 0 20px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "build_year apartments" "two_bed_apart one_bed_apart";
+}
+.build_year {
+    grid-area: build_year;
+}
+.apartments {
+    grid-area: apartments;
+}
+.two_bed_apart {
+    grid-area: two_bed_apart;
+}
+.one_bed_apart {
+    grid-area: one_bed_apart;
+}
+
+.info_header {
+    text-align: center;
+    font-family: Calibri, sans-serif;
+}
+
+.info_dorm_h2 {
+    color: $dark_brown;
+    padding-top: 10px;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+.info_dorm_h3 {
+    color: $text_light;
+    font-size: 1em;
+    font-weight: 100;
+}
+/* ------------------------------------ */
+/* -- Fact Section - Kommende beboere-- */
+.fact_header,
+.facts_p {
+    color: $dark_brown;
+    text-align: center;
+    font-family: Abel, sans-serif;
+    font-weight: 100;
+}
+
+.facts_h3 {
+    font-size: 1em;
+    color: $dark_green;
+    padding: 25px 0 5px 0;
+}
+
+.facts_h2 {
+    font-size: 2.5em;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.facts_line {
+    height: 2px;
+    width: 30%;
+    background-color: $dark_green;
+    margin: 0 auto;
+}
+
+.facts_p {
+    font-size: 0.8em;
+    padding: 20px 40px 50px 40px;
+}
+
+/* ------------------------------------ */
+/* ----------- Om Fællesskabet -------- */
+
+.community {
+    background-image: url(../img/bagground-forside-beboer.jpg);
+    background-size: 250%;
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.community_container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.community_header {
+    text-align: left;
+    font-family: Abel, sans-serif;
+}
+
+.community_h2 {
+    text-transform: uppercase;
+    color: $text_light;
+    font-size: 2.5em;
+    padding-bottom: 10px;
+}
+
+.community_h3 {
+    font-size: 1em;
+    color: $dark_green;
+    padding: 20px 0 5px 0;
+}
+
+.community_line {
+    height: 2px;
+    width: 35%;
+    background-color: $dark_green;
+}
+
+.community_p {
+    font-size: 0.8em;
+    color: $text_light;
+    padding: 30px 0 30px 0;
+}
+
+.community_img {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+/* ------------------------------------ */
 /* ---------------- footer ------------ */
 footer {
     background: #8db596;
@@ -268,10 +451,112 @@ footer {
     .last_child {
         padding-right: 5px;
     }
+    /* --Kommende beboer-- */
+    .headerimg_dorm {
+        height: 790px;
+    }
+
+    .underlay_filter {
+        top: 300px;
+        height: 400px;
+        width: 300px;
+    }
+
+    .header_dorm_h2 {
+        font-size: 2em;
+    }
+    .header_dorm_h1 {
+        font-size: 5.5em;
+        font-weight: 900;
+    }
+
+    .apply_btn {
+        padding: 10px 35px;
+        font-size: 1.5em;
+    }
+
+    /*--- Info Section ---*/
+
+    .grid-container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .info_dorm_h2 {
+        font-size: 3em;
+    }
+
+    .info_dorm_h3 {
+        font-size: 1.5em;
+    }
+    /*--- Fact Section ---*/
+    .facts_h3 {
+        font-size: 1.5em;
+    }
+
+    .facts_h2 {
+        font-size: 3em;
+    }
+
+    .facts_line {
+        width: 20%;
+    }
+
+    .facts_p {
+        font-size: 1em;
+    }
+    /*--- community ---*/
+    .community {
+        height: 500px;
+    }
+
+    .community_h3 {
+        font-size: 1.7em;
+        padding-top: 0;
+    }
+    .community_h2 {
+        font-size: 3.2em;
+    }
+    .community_line {
+        width: 25%;
+    }
+    .community_p {
+        font-size: 1.1em;
+        padding-bottom: 0;
+    }
+
+    .community_img {
+        height: 70%;
+        width: 100%;
+    }
+
+    .community_container {
+        height: 100%;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .community_container div {
+        width: 40%;
+        margin: auto;
+    }
+
+    .text_wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .community_img {
+        padding: 0;
+    }
+
     /* ------------------------------------ */
     /* --- footer (ipad og tablets) ------- */
     footer {
         padding: 40px 20px 0 20px;
+        height: 200px;
     }
 }
 /* ------------------------------------ */
@@ -341,6 +626,8 @@ footer {
     .last_child {
         padding-right: 5px;
     }
+    /* --Kommende beboer-- */
+
     /* ------------------------------------ */
     /* ---------- footer (desktop) -------- */
     footer {
