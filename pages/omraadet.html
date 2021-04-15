@@ -18,10 +18,16 @@
             name="author"
             content="Melina, Camilla N, Lise-May, Maja B, Jesper"
         />
-        <script src="../js/script.js" defer></script>
+        <script src="../js/map.js" defer></script>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
             href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+            rel="stylesheet"
+        />
+
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+        <link
+            href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
             rel="stylesheet"
         />
     </head>
@@ -60,6 +66,9 @@
         </header>
         <main>
             <div class="layer"></div>
+            <section class="map_section">
+                <div id="map"></div>
+            </section>
         </main>
         <footer>
             <p class="footer_text">

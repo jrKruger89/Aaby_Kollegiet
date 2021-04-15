@@ -12,12 +12,14 @@ $text_light: #ededed;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-size: 100%;
 }
+
 p {
     font-family: calibri;
-    font-size: 12px;
+    font-size: 14px;
     color: #1e1e1e;
 }
 .layer {
@@ -32,7 +34,10 @@ h1 {
     padding-top: 100px;
     text-align: center;
 }
-
+h2 {
+    font-family: abel;
+    font-size: 2.5em;
+}
 h3 {
     color: $text_dark;
     display: block;
@@ -42,10 +47,9 @@ h3 {
     font-size: 20px;
     margin-top: 2px;
 }
-
 h5 {
     font-family: calibri;
-    font-size: 12px;
+    font-size: 14px;
     color: #1e1e1e;
     font-weight: bold;
     margin: 5px 0 5px 0;
@@ -484,6 +488,14 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     padding-bottom: 50px;
 }
 
+/*---- Området ----*/
+#map {
+    width: 800px;
+    height: 800px;
+    margin: auto;
+}
+/*-----------------*/
+
 /* ------------------------------------ */
 /* ---------------- footer ------------ */
 footer {
@@ -619,6 +631,8 @@ footer {
     /*--- community ---*/
     .community {
         height: 500px;
+        display: flex;
+        align-items: center;
     }
 
     .community_h3 {
@@ -630,12 +644,13 @@ footer {
     }
     .community_line {
         width: 25%;
+        margin: 0;
     }
     .community_p {
         font-size: 1.1em;
         padding-bottom: 0;
     }
-
+    /*
     .community_img {
         height: 70%;
         width: 100%;
@@ -661,6 +676,29 @@ footer {
 
     .community_img {
         padding: 0;
+    }
+    */
+    .community_img {
+        object-fit: cover;
+        padding: 0;
+    }
+
+    .community_container {
+        width: 100%;
+        max-height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .text_wrapper {
+        display: block;
+        padding: 25px;
+        width: 50%;
+    }
+    .img_wrapper {
+        padding: 25px;
+        width: 50%;
     }
 
     /* ------------------------------------ */
@@ -752,6 +790,111 @@ footer {
         padding-right: 5px;
     }
     /* --Kommende beboer-- */
+    /* --Kommende beboer-- */
+    .headerimg_dorm {
+        height: 1000px;
+        background-size: cover;
+    }
+
+    .underlay_filter {
+        top: 400px;
+        height: 500px;
+        width: 320px;
+    }
+
+    .header_dorm_h2 {
+        font-size: 2.5em;
+    }
+    .header_dorm_h1 {
+        font-size: 6em;
+        font-weight: 900;
+    }
+
+    .apply_btn {
+        padding: 10px 35px;
+        font-size: 1.5em;
+    }
+
+    /*--- Info Section ---*/
+
+    .grid-container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .info_dorm_h2 {
+        font-size: 3em;
+    }
+
+    .info_dorm_h3 {
+        font-size: 1.5em;
+    }
+    /*--- Fact Section ---*/
+
+    .facts_h3 {
+        font-size: 2em;
+    }
+
+    .facts_h2 {
+        font-size: 3.5em;
+    }
+
+    .facts_line {
+        width: 10%;
+    }
+
+    .facts_p {
+        font-size: 1.5em;
+        padding: 20px 80px 50px 80px;
+    }
+    /*--- community ---*/
+    .community {
+        height: 700px;
+        display: flex;
+        align-items: center;
+    }
+
+    .community_h3 {
+        font-size: 2.3em;
+        padding: 0;
+        margin: 0;
+    }
+    .community_h2 {
+        font-size: 3.7em;
+    }
+    .community_line {
+        width: 40%;
+        padding: 0;
+    }
+    .community_p {
+        font-size: 1.6em;
+        padding-bottom: 0;
+    }
+
+    .community_img {
+        object-fit: cover;
+        padding: 0;
+    }
+
+    .community_container {
+        width: 100%;
+        max-height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .text_wrapper {
+        display: block;
+        padding: 50px;
+        width: 40%;
+    }
+    .img_wrapper {
+        padding: 50px;
+        width: 50%;
+    }
+
+    /* ------------------------------------ */
 
     /* ------------------------------------ */
     /* ---------- footer (desktop) -------- */
