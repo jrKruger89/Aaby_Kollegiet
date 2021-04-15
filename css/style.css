@@ -33,6 +33,24 @@ h1 {
   text-align: center;
 }
 
+h3 {
+  color: #1e1e1e;
+  display: block;
+  font-weight: lighter;
+  font-family: Abel;
+  margin-left: 10px;
+  font-size: 20px;
+  margin-top: 2px;
+}
+
+h5 {
+  font-family: calibri;
+  font-size: 12px;
+  color: #1e1e1e;
+  font-weight: bold;
+  margin: 5px 0 5px 0;
+}
+
 /* ------------------------------------ */
 /* ---------------- navigation -------- */
 .logo_nav_img {
@@ -150,6 +168,19 @@ header .menu-btn:checked ~ .menu-icon .navicon {
   background: transparent;
 }
 
+header .menu-icon_white .navicon_white {
+  background: #ededed;
+}
+
+.opslagstavle_header {
+  background-color: #8db596 !important;
+}
+
+header .menu-icon_white .navicon_white:before,
+header .menu-icon_white .navicon_white:after {
+  background: #ededed !important;
+}
+
 header .menu-btn:checked ~ .menu-icon .navicon:before {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
@@ -158,6 +189,16 @@ header .menu-btn:checked ~ .menu-icon .navicon:before {
 header .menu-btn:checked ~ .menu-icon .navicon:after {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+
+header .menu_white {
+  background-color: #8db596 !important;
+}
+
+.opslagstavle_header li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
@@ -225,19 +266,90 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   margin-bottom: 50px;
 }
 
-/* ------------------------------------ */
 /* ---- main beboer opslagstavle ------ */
-.vaerelsestyper_background {
-  background-color: #92807a;
+.opslagstavle_background {
+  background-color: #ededed;
 }
 
-.heading-box h3 {
+.opslagstavle_section {
+  background-color: white;
+  margin: 2%;
+  width: 96%;
+  padding: 10px;
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.opslagstavle_section ::-webkit-scrollbar {
+  width: 12px;
+  background: red;
+  background-color: royalblue;
+}
+
+.opslagstavle_section ::-webkit-scrollbar-button {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  background: red;
+  background-color: royalblue;
+}
+
+.heading-box {
   background-color: #8db596;
+  color: #ededed;
+  border-radius: 20px;
+  font-family: abel;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 10px;
+  margin: 30px 2% 20px 2%;
+  width: 96%;
+}
+
+.borderline {
+  height: 2px;
+  background-color: #8db596;
+  width: 100%;
+  margin: 5px 0 15px 0;
+}
+
+.user_profile_img {
+  width: 30px;
+  height: 30px;
 }
 
 .logout_img {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+.opslagstavle_section_ul {
+  background-color: white;
+  margin: 2%;
+  width: 96%;
+  padding: 10px;
+}
+
+.opslagstavle_menu_text {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.opslagstavle_text,
+.opslagstavle_ul {
+  margin: 10px 0 10px 0;
+}
+
+.opslagstavle_ul {
+  font-family: calibri;
+  font-size: 12px;
+  color: #1e1e1e;
+  list-style-position: inside;
+}
+
+.opslagstavle_ul li {
+  margin: 10px;
 }
 
 /* ------------------------------------ */
@@ -643,6 +755,12 @@ footer {
     padding: 0;
   }
   /* ------------------------------------ */
+  /* ---- main beboer opslagstavle (ipad og tablets) ------ */
+  h3 {
+    font-size: 18px;
+  }
+  /* ------------------------------------ */
+  /* ------------------------------------ */
   /* --- footer (ipad og tablets) ------- */
   footer {
     padding: 40px 20px 0 20px;
@@ -699,6 +817,11 @@ footer {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
     margin: 0;
+  }
+  /* ------------------------------------ */
+  /* ---- main beboer opslagstavle (desktop) ------ */
+  h3 {
+    font-size: 20px;
   }
   /* ------------------------------------ */
   /* ------- navigation (desktop) ------- */
