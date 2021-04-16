@@ -19,6 +19,7 @@
             content="Melina, Camilla N, Lise-May, Maja B, Jesper"
         />
         <script src="../js/map.js" defer></script>
+        <script src="../js/slider.js" defer></script>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
             href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
@@ -66,9 +67,77 @@
         </header>
         <main>
             <div class="layer"></div>
-            <section class="map_section">
-                <div id="map"></div>
-            </section>
+            <div class="area_slideshow_container">
+                <section class="area">
+                    <h3 class="area_h3">Kollegiets</h3>
+                    <h1 class="area_h1">Område</h1>
+                    <div class="area_line"></div>
+                    <p class="area_p">
+                        Åbykollegiet ligger i et fantastisk område centralt i
+                        den attraktive bydel Åbyhøj. Åbyhøj er et ret nyt
+                        bolligområde med bl.a. egene dagligvarebutikker og
+                        institutoner. Facaden mod syd ligger direkte ud til
+                        områdets grønne areal med hygelige opholdsarealer, sø og
+                        boldspilsfasiliteter. I kolegiets stueplan er der
+                        desuden et fællesareal med køkken, et fitnesslokale-
+                        alle med udgang til gårdhavens sydvendte terasse og
+                        opholdsareal.
+                    </p>
+                </section>
+                <section class="slideshow-container2">
+                    <div class="mySlides2 fade">
+                        <img
+                            class="slide_img2"
+                            alt="indretning aaby kollegievaerelse"
+                            src="../img/omraede3.png"
+                        />
+                    </div>
+                    <div class="mySlides2 fade">
+                        <img
+                            class="slide_img2"
+                            alt="indretning aaby kollegievaerelse"
+                            src="../img/omraede2.png"
+                        />
+                    </div>
+                    <div class="mySlides2 fade">
+                        <img
+                            class="slide_img2"
+                            alt="indretning aaby kollegievaerelse"
+                            src="../img/omraede1.png"
+                        />
+                    </div>
+                    <a class="prev2" onclick="plusSlides2(-1)">&#10094;</a>
+                    <a class="next2" onclick="plusSlides2(1)">&#10095;</a>
+                    <div style="text-align: center">
+                        <span class="dot2" onclick="currentSlide2(1)"></span>
+                        <span class="dot2" onclick="currentSlide2(2)"></span>
+                        <span class="dot2" onclick="currentSlide2(3)"></span>
+                    </div>
+                </section>
+            </div>
+            <div class="location_map_container">
+                <section class="location">
+                    <h3 class="location_h3">Bynær</h3>
+                    <h2 class="location_h2">Beliggenhed</h2>
+                    <div class="location_line"></div>
+                    <ul class="location_list">
+                        <li class="location_item">Aarhus Universitet - 3 km</li>
+                        <li class="location_item">
+                            Business Academy Aarhus - 5,4 km
+                        </li>
+                        <li class="location_item">Aarhus Tech - 1,3 km</li>
+                        <li class="location_item">
+                            Via University College - 1,5 km
+                        </li>
+                        <li class="location_item">Ringgaden - 1 km</li>
+                        <li class="location_item">Aarhus C - 2 km</li>
+                        <li class="location_item">Motorvej E45 - 3 km</li>
+                    </ul>
+                </section>
+                <section class="map_section">
+                    <div id="map"></div>
+                </section>
+            </div>
         </main>
         <footer>
             <p class="footer_text">
