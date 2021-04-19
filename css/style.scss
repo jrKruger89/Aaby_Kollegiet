@@ -300,11 +300,17 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     border-radius: 0 3px 3px 0;
     user-select: none;
 }
+
+.prev4,
+.next4 {
+    margin-top: -16%;
+    width: 50%;
+}
 .prev2,
 .next2 {
     cursor: pointer;
     position: absolute;
-    margin-top: -80%;
+    margin-top: -80% !important;
     width: 15%;
     padding: 16px;
     color: $dark_green;
@@ -328,6 +334,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     left: 0;
     border-radius: 3px 0 0 3px;
 }
+
 .dot,
 .dot2,
 .dot3,
@@ -341,6 +348,9 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     display: inline-block;
     transition: background-color 0.6s ease;
 }
+.dot4 {
+    margin-bottom: 30px;
+}
 .active,
 .dot:hover {
     background-color: $dark_green;
@@ -353,7 +363,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 .dot3:hover {
     background-color: $dark_green;
 }
-.active,
+.active4,
 .dot4:hover {
     background-color: $dark_green;
 }
@@ -405,7 +415,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     text-align: center;
 }
 #passwordinput {
-    width: 130px;
+    width: 200px;
     height: 30px;
     font-size: 30px;
     border: 2px solid $light_green;
@@ -683,7 +693,8 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 .area_h3 {
     text-align: center;
     color: $dark_green;
-    padding-top: 20px;
+    padding-top: 25px;
+    margin-top: 20px;
     font-weight: 100;
 }
 
@@ -701,6 +712,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 }
 .area_p {
     padding: 40px 40px 30px 40px;
+    text-align: center;
 }
 
 // Slideshow start - omraadet
@@ -727,7 +739,6 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 .slide_img,
 .slide_img2 {
     width: 100%;
-    border: 1px solid darkgray;
 }
 .slider_information {
     padding-left: 7%;
@@ -825,6 +836,10 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     width: 35%;
     background-color: $light_green;
     margin-left: 10px;
+}
+.location_p {
+    margin: 15px 0 0 10px;
+    color: $text_light;
 }
 
 .location_list {
@@ -933,6 +948,43 @@ textarea.contact-form-text {
 .contact-form-btn:hover {
     background: #bedbbb;
 }
+
+.error_body {
+    margin: auto 5%;
+}
+
+.error_page {
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.error_btn {
+    width: 260px;
+    height: 40px;
+    margin: 5px auto 10px auto;
+    background-color: $light_brown;
+    color: $text_light;
+    border: 0;
+    border-radius: 20px;
+    font-family: abel;
+    font-size: 23px;
+    font-weight: 100;
+    padding: 5px;
+}
+.error_img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 30px 0 50px 0;
+}
+
+.error_title {
+    color: $text_dark;
+}
+
 /* ------------------------------------ */
 /* ---------------- footer ------------ */
 footer {
@@ -1172,6 +1224,16 @@ footer {
     .spoergmal-overskrift {
         font-size: 3em;
     }
+
+    .error_btn {
+        width: 245px;
+        margin: 5px 10px 10px auto;
+        font-size: 21px;
+    }
+
+    .error_img {
+        width: 70%;
+    }
     /* --- footer (ipad og tablets) ------- */
     footer {
         padding: 40px 20px 0 20px;
@@ -1228,11 +1290,15 @@ footer {
     }
 
     h3 {
-        font-size: 1.2em;
+        font-size: 1.5em;
+    }
+
+    h5 {
+        font-size: 16px;
     }
 
     p {
-        font-size: 1.5em;
+        font-size: 16px;
     }
     /* ------------------------------------ */
 
@@ -1349,6 +1415,7 @@ footer {
     .h3_vaerelsestyper {
         margin-top: 20px;
         font-size: 1.5em;
+        font-weight: 100;
     }
     h2 {
         font-size: 3em;
@@ -1384,6 +1451,10 @@ footer {
         width: 40%;
         font-size: 40px;
     }
+    .prev4,
+    .next4 {
+        font-size: 40px;
+    }
     /* ------------------------------------ */
     /* ---- main beboer opslagstavle (desktop) ------ */
     .opslagstavle_grid {
@@ -1395,7 +1466,7 @@ footer {
         grid-template-rows: 1fr 3fr 1fr 3fr;
         margin-top: -2%;
         width: 100%;
-        height: 780px;
+        height: 100vh;
         grid-template-areas:
             "h4-1 h4-3"
             "content-1 content-3"
@@ -1426,10 +1497,10 @@ footer {
     .opslagstavle_section {
         margin: 0;
         width: 100%;
-        height: 270px;
+        height: 100%;
     }
     .heading-box {
-        margin: 27px 0 0 0;
+        margin: 58px 0 4px 0;
         width: 350px;
     }
     .opslagstavle_section_ul {
@@ -1519,6 +1590,11 @@ footer {
     .spoergmal-overskrift {
         font-size: 2.5em;
     }
+    /* ------ mediaquery desktop ---------- */
+    .error_img {
+        width: 40%;
+    }
+
     /* ------------------------------------ */
     /* ---------- footer (desktop) -------- */
     footer {
