@@ -554,13 +554,16 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 }
 
 .apply_btn {
-    z-index: 1;
     background-color: $dark_green;
     color: $text_light;
     padding: 5px 32px;
     cursor: pointer;
     border: none;
     border-radius: 18px;
+}
+
+.apply_btn_anchor {
+    z-index: 1;
 }
 
 .info_dorm {
