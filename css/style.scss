@@ -160,7 +160,7 @@ header .menu-btn {
     display: none;
 }
 header .menu-btn:checked ~ .menu {
-    max-height: 240px;
+    max-height: 260px;
 }
 header .menu-btn:checked ~ .menu-icon .navicon {
     background: transparent;
@@ -303,8 +303,8 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 
 .prev4,
 .next4 {
-    margin-top: -16%;
-    width: 50%;
+    margin-top: -36%;
+    width: 15%;
 }
 .prev2,
 .next2 {
@@ -999,9 +999,10 @@ footer {
 }
 .footer_text {
     font-family: abel;
-    color: $text_light;
+    color: $text_light !important;
     text-align: center;
     font-size: 15px;
+    text-decoration: none;
 }
 /* ------------------------------------ */
 /* --- mediaquery ipad og tablets ----- */
@@ -1058,8 +1059,8 @@ footer {
         float: left;
     }
     header li a {
-        padding-left: 10px;
-        font-size: 18px;
+        padding: 20px 10px 20px 10px;
+        font-size: 16px;
     }
     header .menu {
         clear: none;
@@ -1199,6 +1200,12 @@ footer {
     }
     .location_h2 {
         font-size: 4em;
+    }
+
+    .prev4,
+    .next4 {
+        margin-top: -32%;
+        font-size: 40px;
     }
 
     /*--- Omraade - map section ---*/
@@ -1544,6 +1551,12 @@ footer {
     .next2 {
         margin-top: -18%;
         width: 45%;
+    }
+
+    .prev4,
+    .next4 {
+        margin-top: -17%;
+        width: 55%;
     }
     /*--- Map & location ---*/
     .location_map_container {
